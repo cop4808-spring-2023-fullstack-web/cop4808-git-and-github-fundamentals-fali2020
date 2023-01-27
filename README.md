@@ -1,4 +1,5 @@
-# :wave: The Basics of GitHub 
+# Name: Fatimah Ali
+# :wave: The Basics of GitHub
 
 ## 🤓 Course overview and learning outcomes 
 
