@@ -114,4 +114,8 @@ button {
     font-weight: bold;
 }
 
+.new_buttons:active {
+    background-color: #b2b9b7;
+}
+
 

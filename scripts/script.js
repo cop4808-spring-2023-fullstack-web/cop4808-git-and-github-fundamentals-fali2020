@@ -41,9 +41,22 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')) {
                 clearDisplay();
                 updateDisplay();
+            } else if(buttons[i].classList.contains('sqrt')) {
+                sqrt(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('log')) {
+                log(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('max')) {
+                max(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('pow')) {
+                pow(displayValue);
+                updateDisplay();
+            }
         }
     )}
 }
@@ -181,4 +194,20 @@ function operate(x, y, op) {
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
+function sqrt(num) {
+    return displayValue = Math.sqrt(num).toFixed(9)
+}
+
+function log(num) {
+    return displayValue = Math.log(num).toFixed(9)
+}
+
+function max(num1, num2) {
+    return displayValue = Math.max(num1, num2).toFixed(9)
+}
+
+function pow(num1, num2) {
+    return displayValue = Math.pow(num1, num2).toFixed(9)
 }
