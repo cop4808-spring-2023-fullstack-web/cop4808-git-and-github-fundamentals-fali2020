@@ -44,16 +44,16 @@ function clickButton() {
             } else if(buttons[i].classList.contains('clear')) {
                 clearDisplay();
                 updateDisplay();
-            } else if(buttons[i].classList.contains('sqrt')) {
+            } else if(buttons[i].classList.contains('sqrt')) { //sqrt new button
                 sqrt(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('log')) {
+            } else if(buttons[i].classList.contains('log')) { //log new button
                 log(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('max')) {
+            } else if(buttons[i].classList.contains('max')) { //max new button
                 max(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('pow')) {
+            } else if(buttons[i].classList.contains('pow')) { //pow new button
                 pow(displayValue);
                 updateDisplay();
             }
@@ -196,6 +196,7 @@ function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
 }
 
+//function implementation for new buttons
 function sqrt(num) {
     return displayValue = Math.sqrt(num).toFixed(9)
 }

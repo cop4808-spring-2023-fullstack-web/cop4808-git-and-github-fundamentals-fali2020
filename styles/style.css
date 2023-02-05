@@ -109,7 +109,7 @@ button {
     background-color: rgb(123, 189, 255);
 }
 
-.new_buttons {
+.new_buttons { /* class with updated changes in new buttons */
     background-color: bisque;
     font-weight: bold;
 }
